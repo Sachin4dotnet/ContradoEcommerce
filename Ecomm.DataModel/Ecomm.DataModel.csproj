@@ -1,0 +1,36 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Migrations\20211129042801_InitialDBScript.cs" />
+    <Compile Remove="Migrations\20211129042801_InitialDBScript.Designer.cs" />
+    <Compile Remove="Migrations\20211129045522_AddProductTables.cs" />
+    <Compile Remove="Migrations\20211129045522_AddProductTables.Designer.cs" />
+    <Compile Remove="Migrations\20211129045704_seeddata.cs" />
+    <Compile Remove="Migrations\20211129045704_seeddata.Designer.cs" />
+    <Compile Remove="Migrations\20211129053108_ProdctTablesRefernce.cs" />
+    <Compile Remove="Migrations\20211129053108_ProdctTablesRefernce.Designer.cs" />
+    <Compile Remove="Migrations\20211129070221_AddProductTables.cs" />
+    <Compile Remove="Migrations\20211129070221_AddProductTables.Designer.cs" />
+    <Compile Remove="Migrations\20211129070257_seeddata.cs" />
+    <Compile Remove="Migrations\20211129070257_seeddata.Designer.cs" />
+    <Compile Remove="Migrations\20211129082110_product-attributes.cs" />
+    <Compile Remove="Migrations\20211129082110_product-attributes.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Migrations\20211129042801_InitialDBScript.sql" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.21" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.21">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+</Project>
